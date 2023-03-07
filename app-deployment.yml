@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: caoakira/k8s-projeto2-:2.0
+        image: caoakira/k8s-projeto2:2.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80
