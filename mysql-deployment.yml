@@ -25,7 +25,8 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: mysql:latest
+      - name: mysql
+        image: mysql:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3306
@@ -49,6 +50,7 @@ spec:
       - name: mysql
         persistentVolumeClaim:
           claimName: mysql
+          
 ---
 apiVersion: v1
 kind: Service
